@@ -185,7 +185,7 @@ def new_game(p_tile, c_tile):
 
 
 def draw_menu():
-    screen.blit(tile_font.render('Reverse game', 1, BLACK), (160, 128))
+    screen.blit(tile_font.render('Reversi game', 1, BLACK), (160, 128))
     screen.blit(text_font.render('Press H for hints', 1, BLACK), (220, 450))
 
 
@@ -310,7 +310,7 @@ text_font = pygame.font.Font(None, 32)
 tile_font = pygame.font.Font(None, 64)
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Reverse")
+pygame.display.set_caption("Reversi")
 player_tile, computer_tile = 'X', 'O'
 
 while True:
